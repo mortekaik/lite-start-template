@@ -1,7 +1,7 @@
 {
-	"name": "mine-gulp-lite",
+	"name": "lite-start-template",
 	"version": "0.0.1",
-	"description": "Simple template with gulp",
+	"description": "Simple lite template with gulp",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -14,8 +14,8 @@
 		"ie 9-11"
 	],
 	"devDependencies": {
-		"@babel/core": "^7.6.2",
-		"@babel/preset-env": "^7.6.2",
+		"@babel/core": "^7.6.3",
+		"@babel/preset-env": "^7.6.3",
 		"@babel/register": "^7.6.2",
 		"babel-eslint": "^10.0.3",
 		"browser-sync": "^2.26.7",
@@ -32,6 +32,7 @@
 		"gulp-imagemin": "^6.1.1",
 		"gulp-plumber": "^1.2.1",
 		"gulp-rename": "^1.4.0",
+		"gulp-replace": "^1.0.0",
 		"gulp-sass": "^4.0.2",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify": "^3.0.2",
