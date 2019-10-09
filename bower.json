@@ -1,0 +1,21 @@
+{
+	"name": "mine-gulp-lite",
+	"description": "Simple template with gulp",
+	"main": "index.js",
+	"authors": [
+		"mortekaik"
+	],
+	"license": "ISC",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"app/libs/",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "^3.4.1",
+		"normalize.css": "^8.0.1"
+	}
+}

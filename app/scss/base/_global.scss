@@ -1,0 +1,72 @@
+// @import '../utils/vars';
+
+/*--- GLOBAL TAG STYLES ---*/
+
+* {
+	@include placeholder(#666666); // фон заглушки для инпутов
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+	color: #666666;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	min-width: 320px; // поменять на нужное значение
+
+	font-family: $basefont;
+	font-size: $basefont-size;
+	line-height: 1.2; // межстрочный интервал свой для каждого проекта
+	color: $basefont-color;
+	background-color: $bg-darkgrey;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*--- GLOBAL CLASS STYLES ---*/
+
+//спец.класс для скрытия элементов с сохранением доступности
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0, 0, 0, 0);
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	// background-color: #eeeeee;
+	padding: 15px 20px;
+	outline: 2px solid #ff0000;
+}

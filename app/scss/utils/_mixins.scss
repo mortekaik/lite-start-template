@@ -1,0 +1,114 @@
+// FONT FACE
+// @include font-face('bariol-reg', '../fonts/BariolRegular/BariolRegular');
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+
+		@if $asset-pipeline == true {
+			src: font-url('#{$file-path}.eot');
+			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype');
+		}
+
+		@else {
+			src: url('#{$file-path}.eot');
+			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+		}
+	}
+}
+
+
+// INPUT PLACEHOLDER MIXIN
+// @include placeholder(#777777, 0.7);
+
+@mixin placeholder($color, $opacity: 1) {
+	&::-webkit-input-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&:-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+}
+
+
+// CUT TEXT WITH ELLIPSIS*/
+// @include text-ellipsis;
+
+@mixin text-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+// TRIANGLES
+
+// $direction: up, down, left, right
+// @include triangle(up, $size: 10px, $color: #222);
+
+@mixin triangle($direction, $size, $color) {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+
+	@if ($direction == 'up') {
+		border-bottom: $size solid $color;
+		border-left: 1/2*$size solid transparent;
+		border-right: 1/2*$size solid transparent;
+	}
+
+	@else if ($direction == 'down') {
+		border-top: $size solid $color;
+		border-left: 1/2*$size solid transparent;
+		border-right: 1/2*$size solid transparent;
+	}
+
+	@else if ($direction == 'left') {
+		border-top: 1/2*$size solid transparent;
+		border-bottom: 1/2*$size solid transparent;
+		border-right: $size solid $color;
+	}
+
+	@else if ($direction == 'right') {
+		border-top: 1/2*$size solid transparent;
+		border-bottom: 1/2*$size solid transparent;
+		border-left: $size solid $color;
+	}
+}
+
+// OUTLINE
+
+// @include no-outline;
+
+@mixin no-outline {
+	outline: none;
+	background: transparent;
+
+	&::before {
+		display: none;
+	}
+}
+
+// RESET LISTS
+
+// @include ul-reset;
+
+@mixin ul-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

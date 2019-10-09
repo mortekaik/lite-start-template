@@ -1,0 +1,43 @@
+{
+	"name": "mine-gulp-lite",
+	"version": "0.0.1",
+	"description": "Simple template with gulp",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "mortekaik",
+	"license": "ISC",
+	"browserslist": [
+		"last 3 versions",
+		"> 1%",
+		"ie 9-11"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.6.2",
+		"@babel/preset-env": "^7.6.2",
+		"@babel/register": "^7.6.2",
+		"babel-eslint": "^10.0.3",
+		"browser-sync": "^2.26.7",
+		"del": "^5.1.0",
+		"eslint": "^6.5.1",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-debug": "^4.0.0",
+		"gulp-file-include": "^2.1.0",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-if": "^3.0.0",
+		"gulp-imagemin": "^6.1.1",
+		"gulp-plumber": "^1.2.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglify": "^3.0.2",
+		"gulp-watch": "^5.0.1",
+		"require-dir": "^1.2.0",
+		"stylelint": "^11.0.0",
+		"yargs": "^14.2.0"
+	}
+}

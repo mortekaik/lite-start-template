@@ -1,0 +1,12 @@
+/.git/
+/archive/
+/archives/
+/dist/
+/node_modules/
+/psd/
+/reference/
+
+/app/css/
+/app/libs/
+/app/scss/utils/_vars.scss
+# /app/scss/base/*.scss
