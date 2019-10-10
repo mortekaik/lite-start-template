@@ -7,18 +7,16 @@ export const roots = {
 export const paths = {
 	views: {
 		src: [
-			roots.src + 'index.+(php|html)',
-			roots.src + 'pages/**/*.+(php|html)',
+			roots.src + '*.+(php|html)',
 		],
 		dist: roots.build,
 		watch: [
 			roots.src + '*.+(php|html)',
-			roots.src + 'pages/**/*.+(php|html)',
 		]
 	},
 	styles: {
 		src: roots.src + 'scss/main.scss',
-		dist: roots.build + 'styles/',
+		dist: roots.build + 'css/',
 		app: roots.src + 'css/',
 		watch: roots.src + 'scss/**/*.scss',
 	},

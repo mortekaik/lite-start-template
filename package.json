@@ -4,7 +4,15 @@
 	"description": "Simple lite template with gulp",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"dev": "gulp",
+		"build": "gulp prod --production",
+		"build views": "gulp views --production",
+		"build styles": "gulp styles --production",
+		"build scripts": "gulp scripts --production",
+		"build images": "gulp images --production",
+		"build fonts": "gulp fonts --production",
+		"lint:style": "stylelint \"app/**/*.scss\" --syntax=scss",
+		"lint:style --fix": "stylelint \"app/**/*.scss\" --syntax=scss --fix"
 	},
 	"author": "mortekaik",
 	"license": "ISC",

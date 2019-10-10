@@ -1,12 +1,9 @@
 'use strict';
 
-import { roots, paths } from '../paths';
-import gulp from 'gulp';
+import { roots } from '../paths';
 import browserSync from 'browser-sync';
 
-import views from './views';
-
-export default function serve () {
+export default function serve() {
 	browserSync.init({
 		server: {
 			baseDir: roots.src
@@ -18,6 +15,4 @@ export default function serve () {
 		// tunnel: true,
 		// tunnel: 'projectname', // Demonstration page: http://projectmane.localtunnel.me
 	});
-
-	gulp.watch(paths.views.watch, gulp.parallel(views));
 }
