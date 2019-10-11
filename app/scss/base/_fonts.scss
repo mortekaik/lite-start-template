@@ -1,8 +1,5 @@
 // @import '../utils/mixins';
 
 // for example
-@include font-face('bariol-reg', '../fonts/BariolRegular/BariolRegular');
-@include font-face('bariol-reg', '../fonts/BariolRegularItalic/BariolRegularItalic', normal, italic);
-
-// @include font-face('roboto-example', '../fonts/RobotoRegular/RobotoRegular');
-// @include font-face('roboto-example', '../fonts/RobotoBold/RobotoBold', bold);
+@include font-face('Roboto', '../fonts/RobotoRegular/RobotoRegular');
+@include font-face('Roboto', '../fonts/RobotoBold/RobotoBold', bold);

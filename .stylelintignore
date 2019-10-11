@@ -8,5 +8,6 @@
 
 /app/css/
 /app/libs/
+/app/js/
 /app/scss/utils/_vars.scss
 # /app/scss/base/*.scss

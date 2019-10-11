@@ -31,14 +31,11 @@ export const paths = {
 		watch: roots.src + 'libs/**/*.js',
 	},
 	images: {
-		src: roots.src + 'img/**/*.{jpg,jpeg,png,gif,tiff,svg}',
+		src: [
+			roots.src + 'img/**/*.*',
+		],
 		dist: roots.build + 'img/',
-		watch: roots.src + 'img/**/*.{jpg,jpeg,png,gif,tiff,svg}',
-	},
-	sprites: {
-		src: roots.src + 'img/svg/*.svg',
-		dist: roots.build + 'img/sprites/',
-		watch: roots.src + 'img/svg/*.svg',
+		watch: roots.src + 'img/**/*.*'
 	},
 	fonts: {
 		src: roots.src + 'fonts/**/*',
