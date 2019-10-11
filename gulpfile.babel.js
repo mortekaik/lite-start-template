@@ -7,8 +7,8 @@ import clean from './gulp/tasks/clean';
 import fonts from './gulp/tasks/fonts';
 import images from './gulp/tasks/images';
 import serve from './gulp/tasks/serve';
-import styles from './gulp/tasks/styles';
 import scripts from './gulp/tasks/scripts';
+import styles from './gulp/tasks/styles';
 import views from './gulp/tasks/views';
 import watch from './gulp/tasks/watch';
 
