@@ -1,8 +1,18 @@
 'use strict';
 
-import { roots } from '../paths';
+import { roots, paths } from '../paths';
 import del from 'del';
 
-export default function clean() {
+function clean() {
 	return del([roots.build]);
 }
+
+function cleanApp() {
+	return del([
+		paths.styles.app,
+		paths.scripts.src + '*.{js,map}',
+		'!' + paths.scripts.common
+	]);
+}
+
+export { clean, cleanApp };

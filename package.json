@@ -11,8 +11,8 @@
 		"scripts": "gulp scripts --production",
 		"images": "gulp images --production",
 		"fonts": "gulp fonts --production",
-		"lint:style": "stylelint \"app/**/*.scss\" --syntax=scss",
-		"lint:style --fix": "stylelint \"app/**/*.scss\" --syntax=scss --fix"
+		"lint:style": "stylelint \"app/scss/**/*.scss\"",
+		"lint:style-fix": "stylelint \"app/scss/**/*.scss\" --fix"
 	},
 	"author": "mortekaik",
 	"license": "ISC",
@@ -22,7 +22,7 @@
 		"ie 9-11"
 	],
 	"devDependencies": {
-		"@babel/core": "^7.6.3",
+		"@babel/core": "^7.6.4",
 		"@babel/preset-env": "^7.6.3",
 		"@babel/register": "^7.6.2",
 		"babel-eslint": "^10.0.3",
@@ -44,7 +44,7 @@
 		"gulp-sass": "^4.0.2",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify": "^3.0.2",
-		"stylelint": "^11.0.0",
+		"stylelint": "^11.1.1",
 		"yargs": "^14.2.0"
 	},
 	"dependencies": {}

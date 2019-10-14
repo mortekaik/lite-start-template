@@ -3,7 +3,7 @@
 import gulp from 'gulp';
 
 // импорт тасков
-import clean from './gulp/tasks/clean';
+import { clean, cleanApp } from './gulp/tasks/clean';
 import fonts from './gulp/tasks/fonts';
 import images from './gulp/tasks/images';
 import serve from './gulp/tasks/serve';
@@ -22,6 +22,6 @@ export const prod = gulp.series(clean,
 	gulp.series([views, scripts, styles, fonts, images])
 );
 
-export { clean, fonts, images, views, styles, scripts };
+export { clean, cleanApp, fonts, images, views, styles, scripts };
 
 export default development;
