@@ -2,4 +2,7 @@
 
 # Ignore dist files
 dist/*
+
+# Ignore some app files
 app/js/main.js
+app/libs

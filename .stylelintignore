@@ -1,13 +1,19 @@
-/.git/
-/archive/
-/archives/
-/dist/
-/node_modules/
-/psd/
-/reference/
+# git
+.git/
 
-/app/css/
-/app/libs/
-/app/js/
-/app/scss/utils/_vars.scss
+# reference & archives
+archive/
+archives/
+psd/
+reference/
+
+# dependencies
+node_modules/
+
+# project folder & files
+dist/
+app/css/**/*
+app/libs/**/*
+app/js/**/*
+app/scss/utils/_vars.scss
 # /app/scss/base/*.scss

@@ -1,21 +1,43 @@
+# OSX
 .DS_Store
 .DS_Store?
-._*
+
+# editors
 .idea
 .vscode
+
+# git
 .github
 .env
 .git
-/archives/
-/dist/
-/node_modules/
-/reference/
-/app/libs/
-/app/css/
-/app/ht.access
-/**/*.psd
-/**/*.rar
-/**/ehthumbs.db
-/**/Thumbs.db
-_config.yml
+
+# configs
+# some _config.*
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# dependencies
+node_modules/
 package-lock.json
+app/libs/
+
+# misc folders
+dist/
+app/css/
+
+# reference / archives
+archives/
+**/*.psd
+**/*.rar
+reference/
+
+# server
+app/ht.access
+
+# thumbs
+._*
+**/ehthumbs.db
+**/Thumbs.db
