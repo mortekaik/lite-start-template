@@ -30,6 +30,7 @@ export default function images() {
 		]))
 		.pipe(gulp.dest(paths.images.dist))
 		.pipe(debug({
-			'title': 'Images'
+			'title': 'Images',
+			'showFiles': false
 		}));
 }
