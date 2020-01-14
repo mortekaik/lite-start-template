@@ -4,16 +4,20 @@ import { paths } from '../paths';
 import gulp from 'gulp';
 import imagemin from 'gulp-imagemin';
 import imageminPngquant from 'imagemin-pngquant';
+import imageminMozjpeg from 'imagemin-mozjpeg';
 import debug from 'gulp-debug';
 
 export default function images() {
 	return gulp.src(paths.images.src)
 		.pipe(imagemin([
 			imagemin.gifsicle({interlaced: true}),
-			imagemin.jpegtran({progressive: true}),
 			imageminPngquant({
 				speed: 5,
-				quality: [ 0.6, 0.8 ]
+				quality: [ 0.7, 0.8 ]
+			}),
+			imageminMozjpeg({
+				progressive: true,
+				quality: 80
 			}),
 			imagemin.svgo({
 				plugins: [
