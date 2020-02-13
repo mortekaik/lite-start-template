@@ -22,8 +22,8 @@
 		"ie 9-11"
 	],
 	"devDependencies": {
-		"@babel/core": "^7.8.3",
-		"@babel/preset-env": "^7.8.3",
+		"@babel/core": "^7.8.4",
+		"@babel/preset-env": "^7.8.4",
 		"@babel/register": "^7.8.3",
 		"babel-eslint": "^10.0.3",
 		"browser-sync": "^2.26.7",
@@ -46,7 +46,7 @@
 		"gulp-uglify": "^3.0.2",
 		"imagemin-mozjpeg": "^8.0.0",
 		"imagemin-pngquant": "^8.0.0",
-		"stylelint": "^13.0.0",
+		"stylelint": "^13.1.0",
 		"yargs": "^15.1.0"
 	},
 	"dependencies": {}

@@ -21,7 +21,12 @@ export default function styles() {
 	return gulp.src(paths.styles.src)
 		.pipe(gulpif(!production, sourcemaps.init()))
 		.pipe(plumber())
-		.pipe(sass({ outputStyle: 'nested' }))
+		.pipe(sass({
+			indentType: 'tab',
+			indentWidth: 1,
+			linefeed: 'crlf',
+			outputStyle: 'expanded'
+		}))
 		.pipe(gcmq())
 		.pipe(gulpif(production, autoprefixer({
 			cascade: false,
