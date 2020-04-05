@@ -27,6 +27,8 @@ app/libs/
 # misc folders
 dist/
 app/css/
+app/js/
+!app/js/common.js
 
 # reference / archives
 archives/
