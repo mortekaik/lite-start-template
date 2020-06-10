@@ -23,7 +23,9 @@
 		"number-leading-zero": "always",
 		"rule-empty-line-before": null,
 
-
+		"color-hex-length": [ "long", {
+			"message": "HEX-цвета нужно указывать полной записью"
+		}],
 		"color-hex-case": ["lower", {
 			"severity": "warning",
 			"message": "HEX-цвета нужно указывать строчными буквами"
