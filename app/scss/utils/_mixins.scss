@@ -19,29 +19,69 @@
 	}
 }
 
+// Adaptive Font Size
+//@include adaptFont(40, 24);
+
+@mixin adaptFont($maxFontSize, $minFontSize, $maxWidth: 1280, $minWidth: 320 ) {
+	$addSize: $maxFontSize - $minFontSize;
+	$maxWidth: $maxWidth - $minWidth;
+	font-size: calc(#{$minFontSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth}));
+}
+
 
 // INPUT PLACEHOLDER MIXIN
 // @include placeholder(#777777, 0.7);
 
-@mixin placeholder($color, $opacity: 1) {
+@mixin placeholder($color, $opacity: 1, $text-overflow: ellipsis) {
 	&::-webkit-input-placeholder {
 		color: $color;
 		opacity: $opacity;
+		text-overflow: $text-overflow;
 	}
+
 	&::-moz-placeholder {
 		color: $color;
 		opacity: $opacity;
+		text-overflow: $text-overflow;
 	}
+
 	&:-moz-placeholder {
 		color: $color;
 		opacity: $opacity;
+		text-overflow: $text-overflow;
 	}
+
 	&:-ms-input-placeholder {
 		color: $color;
 		opacity: $opacity;
+		text-overflow: $text-overflow;
+	}
+
+	&[placeholder] {
+		color: $color;
+		opacity: $opacity;
+		text-overflow: $text-overflow;
 	}
 }
 
+// input focus placeholder mixin
+@mixin focus-placeholder($focus_color: transparent) {
+	&:focus::-webkit-input-placeholder {
+		color: $focus_color;
+	}
+
+	&:focus::-moz-placeholder {
+		color: $focus_color;
+	}
+
+	&:focus:-moz-placeholder {
+		color: $focus_color;
+	}
+
+	&:focus:-ms-input-placeholder {
+		color: $focus_color;
+	}
+}
 
 // CUT TEXT WITH ELLIPSIS*/
 // @include text-ellipsis;
@@ -51,7 +91,6 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-
 
 // TRIANGLES
 
