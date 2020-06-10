@@ -5,7 +5,7 @@ import gulp from 'gulp';
 import gulpif from 'gulp-if';
 import babel from 'gulp-babel';
 import sourcemaps from 'gulp-sourcemaps';
-import uglify from 'gulp-uglify';
+import uglify from 'gulp-uglify-es';
 import concat from 'gulp-concat';
 import rename from 'gulp-rename';
 import debug from 'gulp-debug';

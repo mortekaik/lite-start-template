@@ -3,35 +3,33 @@
 import { paths } from '../paths';
 import gulp from 'gulp';
 import gulpif from 'gulp-if';
-import rename from 'gulp-rename';
-import sass from 'gulp-sass';
-import cleanCSS from 'gulp-clean-css';
-import gcmq from 'gulp-group-css-media-queries';
-import autoprefixer from 'gulp-autoprefixer';
 import sourcemaps from 'gulp-sourcemaps';
 import plumber from 'gulp-plumber';
+import sass from 'gulp-sass';
+import postcss from 'gulp-postcss';
+import cleanCSS from 'gulp-clean-css';
+import rename from 'gulp-rename';
 import debug from 'gulp-debug';
 import browserSync from 'browser-sync';
 import yargs from 'yargs';
 
+const postcssConfig = require('../../postcss.config');
 const argv = yargs.argv;
 const production = !!argv.production;
+
+const sassOpts = {
+	outputStyle: 'expanded',
+	indentType: 'tab',
+	indentWidth: 1,
+	linefeed: 'crlf',
+};
 
 export default function styles() {
 	return gulp.src(paths.styles.src)
 		.pipe(gulpif(!production, sourcemaps.init()))
 		.pipe(plumber())
-		.pipe(sass({
-			indentType: 'tab',
-			indentWidth: 1,
-			linefeed: 'crlf',
-			outputStyle: 'expanded'
-		}))
-		.pipe(gcmq())
-		.pipe(gulpif(production, autoprefixer({
-			cascade: false,
-			grid: true
-		})))
+		.pipe(sass(sassOpts))
+		.pipe(gulpif(production, postcss(postcssConfig)))
 		.pipe(gulpif(production, cleanCSS({
 			compatibility: 'ie8',
 			level: {

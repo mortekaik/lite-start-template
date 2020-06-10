@@ -4,7 +4,6 @@ import { paths } from '../paths';
 import gulp from 'gulp';
 import imagemin from 'gulp-imagemin';
 import imageminPngquant from 'imagemin-pngquant';
-import imageminMozjpeg from 'imagemin-mozjpeg';
 import debug from 'gulp-debug';
 
 export default function images() {
@@ -13,15 +12,17 @@ export default function images() {
 			imagemin.gifsicle({interlaced: true}),
 			imageminPngquant({
 				speed: 5,
-				quality: [ 0.7, 0.8 ]
+				quality: [ 0.7, 0.8 ],
+				strip: true
 			}),
-			imageminMozjpeg({
+			imagemin.mozjpeg({
 				progressive: true,
 				quality: 80
 			}),
 			imagemin.svgo({
 				plugins: [
 					{ removeViewBox: false },
+					{ removeDimensions: false },
 					{ removeUnusedNS: false },
 					{ removeUselessStrokeAndFill: false },
 					{ cleanupIDs: false },
