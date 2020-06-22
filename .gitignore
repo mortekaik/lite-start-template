@@ -21,7 +21,7 @@ npm-debug.log*
 
 # dependencies
 node_modules/
-package-lock.json
+# package-lock.json
 app/libs/
 
 # misc folders
