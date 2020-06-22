@@ -22,14 +22,14 @@
 		"ie 9-11"
 	],
 	"devDependencies": {
-		"@babel/core": "^7.10.2",
-		"@babel/preset-env": "^7.10.2",
-		"@babel/register": "^7.10.1",
-		"autoprefixer": "^9.8.0",
+		"@babel/core": "^7.10.3",
+		"@babel/preset-env": "^7.10.3",
+		"@babel/register": "^7.10.3",
+		"autoprefixer": "^9.8.2",
 		"babel-eslint": "^10.1.0",
 		"browser-sync": "^2.26.7",
 		"del": "^5.1.0",
-		"eslint": "^7.2.0",
+		"eslint": "^7.3.0",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",
 		"gulp-clean-css": "^4.3.0",
@@ -47,7 +47,7 @@
 		"imagemin-pngquant": "^9.0.0",
 		"local-ipv4-address": "0.0.2",
 		"postcss-sort-media-queries": "^1.6.24",
-		"stylelint": "^13.6.0",
+		"stylelint": "^13.6.1",
 		"yargs": "^15.3.1"
 	},
 	"dependencies": {}
