@@ -44,11 +44,11 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify-es": "^2.0.0",
-		"imagemin-pngquant": "^9.0.0",
+		"imagemin-pngquant": "^9.0.1",
 		"local-ipv4-address": "0.0.2",
 		"postcss-sort-media-queries": "^1.7.26",
 		"stylelint": "^13.7.0",
-		"yargs": "^15.4.1"
+		"yargs": "^16.0.2"
 	},
 	"dependencies": {}
 }
