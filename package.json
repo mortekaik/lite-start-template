@@ -27,7 +27,7 @@
 		"@babel/register": "^7.12.10",
 		"autoprefixer": "^10.2.3",
 		"babel-eslint": "^10.1.0",
-		"browser-sync": "^2.26.13",
+		"browser-sync": "^2.26.14",
 		"del": "^6.0.0",
 		"eslint": "^7.18.0",
 		"gulp": "^4.0.2",
