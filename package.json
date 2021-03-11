@@ -44,7 +44,7 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-uglify-es": "^2.0.0",
-		"imagemin-pngquant": "^9.0.1",
+		"imagemin-pngquant": "^9.0.2",
 		"local-ipv4-address": "0.0.2",
 		"postcss": "^8.2.8",
 		"postcss-sort-media-queries": "^3.6.5",
