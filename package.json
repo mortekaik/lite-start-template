@@ -22,8 +22,8 @@
 		"ie 9-11"
 	],
 	"devDependencies": {
-		"@babel/core": "^7.14.0",
-		"@babel/preset-env": "^7.14.1",
+		"@babel/core": "^7.14.2",
+		"@babel/preset-env": "^7.14.2",
 		"@babel/register": "^7.13.16",
 		"autoprefixer": "^10.2.5",
 		"babel-eslint": "^10.1.0",
