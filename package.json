@@ -46,8 +46,8 @@
 		"gulp-uglify-es": "^2.0.0",
 		"imagemin-pngquant": "^9.0.2",
 		"local-ipv4-address": "0.0.2",
-		"postcss": "^8.3.0",
-		"postcss-sort-media-queries": "^3.10.11",
+		"postcss": "^8.3.4",
+		"postcss-sort-media-queries": "^3.11.12",
 		"stylelint": "^13.13.1",
 		"yargs": "^17.0.1"
 	},
