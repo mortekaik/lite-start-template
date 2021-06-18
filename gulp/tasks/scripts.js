@@ -20,7 +20,10 @@ export default function scripts() {
 	return gulp.src([
 		paths.libs.app + 'jquery/dist/jquery.min.js',
 		paths.scripts.common // Всегда в конце
-	])
+	],
+	{
+		allowEmpty: true
+	})
 		.pipe(gulpif(!production, sourcemaps.init()))
 		.pipe(babel({
 			ignore: [paths.libs.app]
