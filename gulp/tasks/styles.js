@@ -5,7 +5,8 @@ import gulp from 'gulp';
 import gulpif from 'gulp-if';
 import sourcemaps from 'gulp-sourcemaps';
 import plumber from 'gulp-plumber';
-import sass from 'gulp-sass';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import cleanCSS from 'gulp-clean-css';
 import rename from 'gulp-rename';
@@ -17,6 +18,7 @@ const postcssConfig = require('../../postcss.config');
 const argv = yargs.argv;
 const production = !!argv.production;
 
+const sass = gulpSass(dartSass);
 const sassOpts = {
 	outputStyle: 'expanded',
 	indentType: 'tab',

@@ -2,7 +2,7 @@
 	"name": "lite-start-template",
 	"version": "0.1.0",
 	"description": "Simple lite template with gulp",
-	"exports": "./index.js",
+	"main": "index.js",
 	"scripts": {
 		"dev": "gulp",
 		"build": "gulp prod --production",
@@ -14,7 +14,6 @@
 		"lint:style": "stylelint \"app/scss/**/*.scss\"",
 		"lint:style-fix": "stylelint \"app/scss/**/*.scss\" --fix"
 	},
-	"type": "module",
 	"author": "mortekaik",
 	"license": "ISC",
 	"browserslist": [
