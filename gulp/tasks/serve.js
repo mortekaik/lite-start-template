@@ -7,6 +7,7 @@ import ip from 'local-ipv4-address';
 export default function serve() {
 
 	let localIp = ip().then(function(IpAddress) {
+		console.log(IpAddress);
 		return IpAddress;
 	});
 
