@@ -22,9 +22,9 @@
 		"ie 9-11"
 	],
 	"devDependencies": {
-		"@babel/core": "^7.22.8",
-		"@babel/eslint-parser": "^7.22.7",
-		"@babel/preset-env": "^7.22.7",
+		"@babel/core": "^7.22.9",
+		"@babel/eslint-parser": "^7.22.9",
+		"@babel/preset-env": "^7.22.9",
 		"@babel/register": "^7.22.5",
 		"autoprefixer": "^10.4.14",
 		"browser-sync": "^2.29.3",
@@ -46,11 +46,11 @@
 		"gulp-uglify-es": "^3.0.0",
 		"imagemin-pngquant": "^9.0.2",
 		"local-ipv4-address": "^0.0.2",
-		"postcss": "^8.4.25",
+		"postcss": "^8.4.26",
 		"postcss-scss": "^4.0.6",
 		"postcss-sort-media-queries": "^5.2.0",
 		"sass": "^1.63.6",
-		"stylelint": "^15.10.1",
+		"stylelint": "^15.10.2",
 		"stylelint-config-standard-scss": "^10.0.0",
 		"yargs": "^17.7.2"
 	}
