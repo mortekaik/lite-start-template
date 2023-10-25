@@ -29,7 +29,12 @@ const sassOpts = {
 export default function styles() {
 	return gulp.src(paths.styles.src)
 		.pipe(gulpif(!production, sourcemaps.init()))
-		.pipe(plumber())
+		.pipe(plumber({
+			errorHandler: function (err) {
+				console.log(err.message);
+				this.emit('end');
+			}
+		}))
 		.pipe(sass(sassOpts))
 		.pipe(gulpif(production, postcss(postcssConfig)))
 		.pipe(gulpif(production, cleanCSS({
