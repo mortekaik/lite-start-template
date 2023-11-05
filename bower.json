@@ -1,6 +1,6 @@
 {
-	"name": "mine-gulp-lite",
-	"description": "Simple template with gulp",
+	"name": "lite-start-template",
+	"description": "Simple lite template with gulp",
 	"main": "index.js",
 	"authors": [
 		"mortekaik"
@@ -15,7 +15,7 @@
 		"tests"
 	],
 	"dependencies": {
-		"jquery": "^3.6.1",
+		"jquery": "^3.7.1",
 		"normalize.css": "^8.0.1"
 	}
 }
